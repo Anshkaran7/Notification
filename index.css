@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+.body {
+  height: 50px;
+}
+.logo > img {
+  height: 60px;
+  /* margin: 1rem; */
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+nav {
+  background-color: #bb83d1;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+.icon {
+  cursor: pointer;
+  margin-right: 30px;
+  line-height: 60px;
+  transform: scale(0.8);
+  position: absolute;
+  right: 20px;
+}
+.icon span {
+  background: #f00;
+  padding: 7px;
+  border-radius: 50%;
+  color: #fff;
+  vertical-align: top;
+  margin-left: -25px;
+}
+.icon img {
+  display: inline-block;
+  width: 40px;
+  margin-top: 20px;
+}
+.icon:hover {
+  opacity: 0.7;
+}
+.notification-box {
+  /* width: 300px; */
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+}
+.notification {
+  background-color: black;
+  padding-bottom: 2rem;
+}
+.tab {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #e7e1e1;
+}
+
+.mark > button {
+  font-size: 12px;
+  /* padding: px; */
+  padding: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  display: flex;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  background-color: #3498db;
+  margin-top: 0.3rem;
+  border-radius: 6px;
+  position: absolute;
+  right: 10px;
+}
+.mark > button:hover {
+  background-color: #2980b9;
+}
+.today-notification {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.today-notification > h1 {
+  font-size: 20px;
+  color: #3498db;
+  padding-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+.today-notification > h1 > span {
+  font-size: 14px;
+  color: #2980b9;
+}
+.yesterday-notification {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.yesterday-notification > h1 {
+  font-size: 20px;
+  color: #3498db;
+  padding-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+.yesterday-notification > h1 > span {
+  font-size: 14px;
+  color: #2980b9;
+}
+.tab > .title > h2 {
+  font-size: 14px;
+  padding: 10px;
+
+  color: #eee;
+}
+.notification h2 span {
+  color: #f00;
+  margin-left: 0.3rem;
+}
+.notification-item {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding: 15px 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-left: 1rem;
+  padding-left: 10px;
+}
+.notification-item:hover {
+  background-color: #eee;
+  color: #2c3e50;
+  transition: 0.5s;
+}
+
+.notification-item img {
+  display: block;
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.notification-item .text h4 {
+  color: rgb(151, 150, 150);
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.notification-item .text p {
+  color: rgb(145, 143, 143);
+  font-size: 12px;
+}
+.notification-item >p {
+  font-size: 10px;
+  color: #bdc3c7;
+  position: relative;
+  left: 34%;
+  top: 40%;
+  text-align: center;
+}
+
+.active {
+  background-color: rgb(54, 51, 51);
+}
+.read{
+    display: none;
+}
+
+@media screen and (max-width:480px) {
+  nav {
+    width: auto;
+  }
+  .notification-box{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .today-notification{
+    display: flex;
+    flex-direction: column;
+  }
+  .body{
+    width: auto;
+  }
+  .yesterday-notification{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .notification-item{
+    transform: scale(0.99);
+  }
+  .notification-item >p{
+    position: relative;
+    font-size: 8px;
+    left: -5%;
+    margin-top: 1rem;
+   
+  }
+  body{
+    height: auto;
+    width: auto;
+  }
+  .notification-item{
+    
+    width: auto;
+  }
+}
+
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    nav {
+        width: auto;
+      }
+      .notification-box{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-bottom: 17rem;
+        
+      }
+      .notification-item >p{
+        position: relative;
+        font-size: 8px;
+        left: -5%;
+      }
+      .notification-item{
+        transform: scale(1.01);
+        
+      } 
+}
+@media screen and (min-width:769px) and (max-width:1290px) {
+    
+      .notification-item >p{
+        position: relative;
+        font-size: 8px;
+       left: 3%;
+      }
+}
